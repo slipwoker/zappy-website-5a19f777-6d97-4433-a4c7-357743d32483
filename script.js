@@ -11775,6 +11775,20 @@ window.onload = function() {
 })();
 
 
+/* Added Component Script */
+document.addEventListener('DOMContentLoaded', function() {
+  const floatingCard = document.querySelector('.hero-model-floating-card');
+  if (floatingCard) {
+    floatingCard.addEventListener('mouseenter', function() {
+      this.style.animationPlayState = 'paused';
+    });
+    floatingCard.addEventListener('mouseleave', function() {
+      this.style.animationPlayState = 'running';
+    });
+  }
+});
+
+
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
   try {
